@@ -100,9 +100,7 @@ p{
   gap: 30px; 
 }
 #menu-toggle{
-  position:absolute;
-  opacity:0;
-  pointer-events:none;
+  display:none;
 }
 
 
@@ -129,6 +127,154 @@ p{
   color:var(--gold);
   transform:scale(1.2);
   text-shadow:0 0 10px rgba(212,175,55,0.6);
+}
+/* LOGIN BUTTON */
+.login-btn{
+  border:1px solid var(--gold);
+  padding:6px 16px;
+  font-size:13px;
+  color:var(--gold);
+  cursor:pointer;
+  border-radius:20px;
+  transition:0.3s;
+}
+
+.login-btn:hover{
+  background:var(--gold);
+  color:#000;
+}
+
+/* HIDE CHECKBOX */
+#login-toggle{
+  display:none;
+}
+
+/* MODAL BACKGROUND */
+.login-modal{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  opacity:0;
+  pointer-events:none;
+  transition:0.3s;
+  z-index:2000;
+}
+
+/* OPEN MODAL */
+#login-toggle:checked ~ .login-modal{
+  opacity:1;
+  pointer-events:auto;
+}
+
+/* OVERLAY */
+.login-overlay{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.7);
+}
+
+/* LOGIN BOX */
+.login-box{
+  position:relative;
+  width:360px;
+  background:#111;
+  padding:30px;
+  border-radius:12px;
+  z-index:2;
+  box-shadow:0 10px 40px rgba(0,0,0,0.6);
+}
+
+/* CLOSE BUTTON */
+.close-btn{
+  position:absolute;
+  top:10px;
+  right:15px;
+  font-size:22px;
+  cursor:pointer;
+}
+
+/* TITLE */
+.login-box h2{
+  text-align:center;
+  margin-bottom:5px;
+}
+
+.login-sub{
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:20px;
+}
+
+/* INPUT */
+.login-box input{
+  width:100%;
+  padding:12px;
+  margin-bottom:12px;
+  background:#000;
+  border:1px solid #333;
+  color:#fff;
+  border-radius:6px;
+}
+
+/* OPTIONS */
+.login-options{
+  display:flex;
+  justify-content:space-between;
+  font-size:12px;
+  margin-bottom:15px;
+}
+
+.login-options a{
+  color:var(--gold);
+  text-decoration:none;
+}
+
+/* LOGIN BUTTON */
+.login-submit{
+  width:100%;
+  padding:12px;
+  background:var(--gold);
+  border:none;
+  cursor:pointer;
+  font-weight:500;
+}
+
+/* DIVIDER */
+.divider{
+  text-align:center;
+  margin:15px 0;
+  font-size:12px;
+  color:#aaa;
+}
+
+/* OTP BUTTON */
+.otp-btn{
+  width:100%;
+  padding:12px;
+  background:transparent;
+  border:1px solid var(--gold);
+  color:var(--gold);
+  cursor:pointer;
+}
+
+/* SIGNUP */
+.signup{
+  text-align:center;
+  font-size:13px;
+  margin-top:15px;
+}
+
+.signup span{
+  color:var(--gold);
+  cursor:pointer;
 }
 .nav-center a{
   color:#ccc;
@@ -844,9 +990,9 @@ p{
 }
 
 /* HIDE CHECKBOX */
-@media (max-width:768px){
+/*@media (max-width:768px){
 
-  .menu-icon{
+ /* .menu-icon{
     display:block;
     cursor:pointer;
     font-size:22px;
@@ -877,13 +1023,24 @@ p{
   }
 
   /* ✅ TOGGLE WORKING */
-  #menu-toggle:checked ~ .nav-center{
+ /* #menu-toggle:checked ~ .nav-center{
     transform:translateY(0);
     opacity:1;
     pointer-events:auto;
+  }*/
+  @media (max-width:768px){
+
+  .nav-center{
+    display:none; /* hide menu */
+  }
+
+  .nav-wrapper{
+    justify-content:space-between;
   }
 
 }
+
+
 
 
 /* HERO */

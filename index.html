@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <input type="checkbox" id="login-toggle">
 
 <!-- NAVBAR -->
 <header class="navbar">
@@ -22,12 +23,7 @@
   <div class="nav-left">
     <div class="logo">THE BESPOKE UNION</div>
   </div>
-   <input type="checkbox" id="menu-toggle">
- 
-  <label for="menu-toggle" class="menu-icon">
-
- <i class="fa-solid fa-bars"></i>
-    </label>
+   
 
   <nav class="nav-center">
     <a href="#">Discover</a>
@@ -35,6 +31,11 @@
     <a href="#">Dashboard</a>
     <a href="#">Membership</a>
   </nav>
+  <div class="nav-right">
+      <label for="login-toggle" class="login-btn">Login</label>
+    </div>
+
+</div>
   
 </div>
   
@@ -331,3 +332,38 @@
 </div>
 
 </footer>
+<div class="login-modal">
+
+  <!-- CLICK OUTSIDE CLOSE -->
+  <label for="login-toggle" class="login-overlay"></label>
+
+  <div class="login-box">
+
+    <label for="login-toggle" class="close-btn">×</label>
+
+    <h2>Welcome back!</h2>
+    <p class="login-sub">Login to continue</p>
+
+    <input type="text" placeholder="Mobile No. / Email ID">
+    <input type="password" placeholder="Password">
+
+    <div class="login-options">
+      <label><input type="checkbox"> Stay Logged in</label>
+      <a href="#">Forgot Password?</a>
+    </div>
+
+    <button class="login-submit">Login</button>
+
+    <div class="divider">OR</div>
+
+    <button class="otp-btn">Login with OTP</button>
+
+    <p class="signup">
+      New here? <span>Sign Up Free</span>
+    </p>
+
+  </div>
+
+</div>
+</body>
+</html>
