@@ -99,6 +99,11 @@ p{
   align-items: center;
   gap: 30px; 
 }
+#menu-toggle{
+  position:absolute;
+  opacity:0;
+  pointer-events:none;
+}
 
 
 
@@ -843,8 +848,9 @@ p{
 
   .menu-icon{
     display:block;
-    font-size:22px;
     cursor:pointer;
+    font-size:22px;
+    z-index:1001;
   }
 
   .nav-center{
@@ -853,8 +859,8 @@ p{
     left:0;
     width:100%;
 
-    background:rgba(0,0,0,0.85);   /* softer */
-    backdrop-filter:blur(10px);
+    background: rgba(10,10,10,0.95);
+    backdrop-filter: blur(12px);
 
     display:flex;
     flex-direction:column;
@@ -863,8 +869,6 @@ p{
 
     padding:20px 0;
 
-    border-top:1px solid rgba(212,175,55,0.2);
-
     transform:translateY(-20px);
     opacity:0;
     pointer-events:none;
@@ -872,7 +876,7 @@ p{
     transition:0.3s ease;
   }
 
-  /* SHOW MENU */
+  /* ✅ TOGGLE WORKING */
   #menu-toggle:checked ~ .nav-center{
     transform:translateY(0);
     opacity:1;
