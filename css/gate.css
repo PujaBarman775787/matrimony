@@ -80,7 +80,7 @@ body{
 
   background:
     linear-gradient(90deg, rgba(0,0,0,0.9), rgba(0,0,0,0.2)),
-    url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da') center/cover no-repeat;
+    url('../images/newhero.jpg') center/cover no-repeat;
 }
 
 
@@ -205,7 +205,7 @@ body{
 
   background:
     linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
-    url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d') center/cover no-repeat;
+    url('../images/queue.jpg') center/cover no-repeat;
 
   padding:20px;
 }
