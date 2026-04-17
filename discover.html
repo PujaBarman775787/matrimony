@@ -7,145 +7,136 @@
 <title>Discover - Bespoke Union</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/discover.css">
 </head>
 
-<body class="discover-page">
+<body>
 
 <!-- NAVBAR -->
 <header class="navbar">
-  <div class="logo">THE BESPOKE UNION</div>
+  <div class="nav-inner">
 
-  <nav class="nav-center">
-    <a href="index.html">Home</a>
-    <a class="active">Discover</a>
-    <a href="#">Matches</a>
-    <a href="#">Dashboard</a>
-    <a href="#">Membership</a>
-  </nav>
+    <div class="logo">THE BESPOKE UNION</div>
+
+    <!-- CENTER NAV -->
+    <nav class="nav-center">
+      <a href="index.html">Home</a>
+      <a class="active">Discover</a>
+      <a href="#">Matches</a>
+    </nav>
+
+    <!-- RIGHT SIDE -->
+    <div class="nav-right">
+      <a href="#" class="premium-btn">Go Premium</a>
+      <div class="profile-dot"></div>
+    </div>
+
+  </div>
 </header>
+
+<!-- HERO -->
+<section class="discover-hero">
+  <div class="container hero-content">
+    <p class="small">CURATED SELECTION</p>
+    <h1>Discover Your Equal</h1>
+    <p>
+      Exclusively curated profiles matching your lifestyle, values, and intellectual depth.
+    </p>
+  </div>
+</section>
 
 <!-- DISCOVER -->
 <section class="discover">
+  <div class="container discover-wrapper">
 
-  <!-- SIDEBAR -->
-  <aside class="sidebar">
-    <h3 class="sidebar-title">Refine Search</h3>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h3>Refine Search</h3>
 
-    <label class="sidebar-label">Religion & Community</label>
-    <select>
-      <option>Any Religion</option>
-    </select>
+      <label>Religion & Community</label>
+      <select>
+        <option>Any Religion</option>
+      </select>
 
-    <label class="sidebar-label">Education Level</label>
-    <div class="check"><input type="checkbox"> Doctorate / PhD</div>
-    <div class="check active"><input type="checkbox" checked> Master's Degree</div>
-    <div class="check"><input type="checkbox"> Professional Degree</div>
+      <label>Education Level</label>
+      <div><input type="checkbox"> Doctorate / PhD</div>
+      <div><input type="checkbox" checked> Master's Degree</div>
+      <div><input type="checkbox"> Professional Degree</div>
 
-    <label class="sidebar-label">Geography</label>
-    <input type="text" placeholder="Enter City or Country">
+      <label>Geography</label>
+      <input type="text" placeholder="Enter City or Country">
 
-    <label class="sidebar-label">Profession</label>
-    <div class="tags">
-      <span>Technology</span>
-      <span class="active">Medicine</span>
-      <span>Law</span>
-      <span>Arts</span>
-    </div>
-
-    <button class="apply-btn">Apply Curated Filters</button>
-  </aside>
-
-  <!-- CONTENT -->
-  <div class="discover-content">
-
-    <!-- TOP -->
-    <div class="top-bar">
-      <div>
-        <p class="small">CURATED SELECTION</p>
-        <h1>Discover Your Equal</h1>
-        <p class="desc">
-          Exclusively curated profiles matching your lifestyle, values, and intellectual depth.
-        </p>
+      <label>Profession</label>
+      <div class="tags">
+        <span>Technology</span>
+        <span class="active">Medicine</span>
+        <span>Law</span>
+        <span>Arts</span>
       </div>
 
-      <div class="sort">
-        Sort by: <span>Most Compatible</span>
-      </div>
-    </div>
+      <button class="apply-btn">Apply Curated Filters</button>
+    </aside>
 
-    <!-- GRID -->
-    <div class="cards">
+    <!-- CONTENT -->
+    <div class="discover-content">
 
-      <!-- CARD 1 -->
-      <div class="card">
-        <div class="card-img" style="background-image:url('images/protocal.png')">
-          <span class="match">98% MATCH</span>
+      <div class="top-bar">
+        <div class="sort">
+          Sort by: <span>Most Compatible</span>
         </div>
+      </div>
 
-        <div class="card-info">
-          <h3>Isabella, 28</h3>
-          <p>Cardiologist · London</p>
+      <div class="cards">
 
-          <div class="contact">
-            CONTACT DETAILS
-            <small>Unlock with Premium</small>
+        <div class="card">
+          <div class="card-img" style="background-image:url('images/protocal.png')">
+            <span class="match">98% MATCH</span>
           </div>
-
-          <button>View Profile</button>
-        </div>
-      </div>
-
-      <!-- CARD 2 -->
-      <div class="card">
-        <div class="card-img" style="background-image:url('images/image3.png')">
-          <span class="match">94% MATCH</span>
-        </div>
-
-        <div class="card-info">
-          <h3>Sebastian, 32</h3>
-          <p>Senior Partner · NY</p>
-
-          <div class="contact">
-            CONTACT DETAILS
-            <small>Unlock with Premium</small>
+          <div class="card-info">
+            <h3>Isabella, 28</h3>
+            <p>Cardiologist · London</p>
+            <div class="contact">CONTACT DETAILS <small>Unlock with Premium</small></div>
+            <button>View Profile</button>
           </div>
-
-          <button>View Profile</button>
-        </div>
-      </div>
-
-      <!-- CARD 3 -->
-      <div class="card">
-        <div class="card-img" style="background-image:url('images/protocal1.png')">
-          <span class="match">91% MATCH</span>
         </div>
 
-        <div class="card-info">
-          <h3>Sophia, 26</h3>
-          <p>Creative Director · Milan</p>
-
-          <div class="contact">
-            CONTACT DETAILS
-            <small>Unlock with Premium</small>
+        <div class="card">
+          <div class="card-img" style="background-image:url('images/image3.png')">
+            <span class="match">94% MATCH</span>
           </div>
-
-          <button>View Profile</button>
+          <div class="card-info">
+            <h3>Sebastian, 32</h3>
+            <p>Senior Partner · NY</p>
+            <div class="contact">CONTACT DETAILS <small>Unlock with Premium</small></div>
+            <button>View Profile</button>
+          </div>
         </div>
-      </div>
 
-      <!-- GOLD CARD -->
-      <div class="gold-card">
-        <h2>Curated Just For You</h2>
-        <p>Upgrade to Gold for unlimited insights.</p>
-        <button>Explore Membership</button>
+        <div class="card">
+          <div class="card-img" style="background-image:url('images/protocal1.png')">
+            <span class="match">91% MATCH</span>
+          </div>
+          <div class="card-info">
+            <h3>Sophia, 26</h3>
+            <p>Creative Director · Milan</p>
+            <div class="contact">CONTACT DETAILS <small>Unlock with Premium</small></div>
+            <button>View Profile</button>
+          </div>
+        </div>
+
+        <!-- GOLD CARD -->
+        <div class="gold-card">
+          <h2>Curated Just For You</h2>
+          <p>Upgrade to Gold for unlimited insights.</p>
+          <button>Explore Membership</button>
+        </div>
+
       </div>
 
     </div>
 
   </div>
-
 </section>
 
 </body>
-</html>
+</html>  
