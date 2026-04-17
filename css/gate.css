@@ -168,10 +168,30 @@ body{
 }
 
 /* ================= OPERATIONS ================= */
+/* ================= OPERATIONS FIX ================= */
+
 .operations{
   padding:100px 0;
 }
 
+/* TEXT FIX (IMPORTANT) */
+.top-text{
+  max-width:700px;
+  margin-bottom:40px;
+}
+
+.operations h2{
+  font-size:clamp(26px,4vw,40px);
+  line-height:1.3;
+  margin-bottom:12px;
+}
+
+.sub{
+  color:#aaa;
+  line-height:1.6;
+}
+
+/* GRID */
 .ops-grid{
   display:grid;
   grid-template-columns:2fr 1fr;
@@ -179,11 +199,14 @@ body{
   gap:20px;
 }
 
+/* BIG CARD */
 .op.big{
   grid-row:span 2;
   position:relative;
   border-radius:12px;
   overflow:hidden;
+  margin-top:10px;
+
   background:url('https://images.unsplash.com/photo-1469474968028-56623f02e42e') center/cover;
 }
 
@@ -198,12 +221,34 @@ body{
   position:absolute;
   bottom:30px;
   left:30px;
+  z-index:2;
 }
 
+/* SMALL CARDS */
 .op{
   background:#141414;
   padding:30px;
   border-radius:12px;
+}
+
+/* MOBILE FIX */
+@media (max-width:768px){
+
+  .operations{
+    padding:60px 20px;
+  }
+
+  .top-text{
+    margin-bottom:30px;
+  }
+
+  .ops-grid{
+    grid-template-columns:1fr;
+  }
+
+  .op.big{
+    height:250px;
+  }
 }
 
 /* ================= QUOTE ================= */
