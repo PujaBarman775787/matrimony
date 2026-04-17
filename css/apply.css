@@ -1,0 +1,120 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body{
+  font-family:'Manrope', sans-serif;
+  color:#fff;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
+    url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d') center/cover no-repeat;
+
+  min-height:100vh;
+}
+
+/* PAGE */
+.apply-page {
+  min-height: 100vh;
+  padding: 100px 20px;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: #aaa;
+  font-size: 18px;
+}
+
+/* FORM BOX */
+.form-box {
+  background: #141414;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* FORM GROUP */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #d4af37;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  background: #0b0b0b;
+  color: #fff;
+  outline: none;
+  font-size: 15px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #d4af37;
+}
+
+/* BUTTON */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: #d4af37;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+/* FOOTER TEXT */
+.privacy-text {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+  font-size: 13px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 34px;
+  }
+
+  .form-box {
+    padding: 25px;
+  }
+}
